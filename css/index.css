@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    background: #AEDCAE;
+    padding: 0px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.start-title {
+    color: #29443A;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    text-align: center;
+    max-width: 485px;
+    margin-bottom: 24px;
+}
+
+.start-name {
+    color: white;
+    font-weight: 700;
+}
+
+.start-input-flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.start-input-flex>label{
+    font-size: 32px;
+    letter-spacing: -2px;
+    color: white;
+    font-weight: 700;
+}
+
+.start-input {
+    border: 3px solid #29443A;
+    height: 36px;
+    border-radius: 4px;
+    background: white;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    text-align: center;
+    width: 36px;
+    padding: 0px 16px;
+    color: #29443A;
+    margin-right: 16px!important;
+    box-shadow: none;
+
+}
+
+.start-input::placeholder{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+.error-input.start-input{
+    border: 3px solid #ed4337!important;
+    color: #ED4337;
+}
+
+.start-button{
+    height: 40px;
+    padding: 0px 16px;
+    border: none;
+    box-shadow: none;
+    background: #29443A;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+}
+
+.start-button.disabled{
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.play-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number, .operator, .end-text{
+    text-align: center;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    color: #29443A;
+    text-shadow: -2px -2px 0 black,-2px -1px 0 black,-2px 0px 0 black,-2px 1px 0 black,-2px 2px 0 black,-1px -2px 0 black,-1px -1px 0 black,-1px 0px 0 black,-1px 1px 0 black,-1px 2px 0 black,0px -2px 0 black,0px -1px 0 black,0px 0px 0 black,0px 1px 0 black,0px 2px 0 black,1px -2px 0 black,1px -1px 0 black,1px 0px 0 black,1px 1px 0 black,1px 2px 0 black,2px -2px 0 black,2px -1px 0 black,2px 0px 0 black,2px 1px 0 black,2px 2px 0 black
+  }
+
+  .operator{
+    margin: 0px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .operator:first-of-type{
+    margin-top: 40px;
+  }
+
+  .input-box{
+    width: 150px;
+    text-align: center;
+    height: 110px;
+    border: 3px solid black;
+    background: white;
+    border-radius: 4px;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    text-shadow: -2px -2px 0 black,-2px -1px 0 black,-2px 0px 0 black,-2px 1px 0 black,-2px 2px 0 black,-1px -2px 0 black,-1px -1px 0 black,-1px 0px 0 black,-1px 1px 0 black,-1px 2px 0 black,0px -2px 0 black,0px -1px 0 black,0px 0px 0 black,0px 1px 0 black,0px 2px 0 black,1px -2px 0 black,1px -1px 0 black,1px 0px 0 black,1px 1px 0 black,1px 2px 0 black,2px -2px 0 black,2px -1px 0 black,2px 0px 0 black,2px 1px 0 black,2px 2px 0 black;
+    color:#29443A; 
+}
+.end-text{
+    text-align: center;
+    padding: 0px 16px;
+    max-width: 700px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .input-box{
+        font-size: 54px;
+        width: 80px;
+        height: 60px;
+
+    }
+    .number, .operator, .end-text{
+        font-size: 64px;
+    }
+
+    .end-text{
+        max-width: 300px;
+        line-height: 48px;
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .input-box{
+        font-size: 40px;
+        width: 65px;
+        height: 50px;
+
+    }
+    .number, .operator, .end-text{
+        font-size: 40px;
+    }
+
+    .start-title, .start-input-flex>label{
+        font-size: 20px;
+    }
+    .start-title, .start-input-flex{
+        margin-bottom: 12px;
+    }
+
+    .start-input{
+        font-size: 20px;
+        width: 25px;
+        height: 30px;
+    }
+
+    .end-text{
+        font-size: 32px;
+        padding: 0px;
+        line-height: 36px;
+    }
+}
